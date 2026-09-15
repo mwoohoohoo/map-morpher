@@ -48,8 +48,8 @@ export default function About() {
             </div>
 
             {/* Top-right */}
-            <div className="bg-bg flex items-center justify-center px-4 py-4 md:px-10 md:py-10 order-1 lg:order-2">
-              <ProjectionIllustration />
+            <div className="bg-bg flex items-center justify-center px-8 py-8 md:px-10 md:py-10 order-1 lg:order-2">
+              <ProjectionIllustration className="w-[280px] md:w-[335px]" />
             </div>
           </div>
         </div>

@@ -375,7 +375,7 @@ export default function ProjectionIllustration({
     <svg
       viewBox={VIEWBOX}
       width={width}
-      height={height}
+      height="auto"
       className={className}
       role="img"
       aria-labelledby="projection-illustration-title"
