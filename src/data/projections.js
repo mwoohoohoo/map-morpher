@@ -1,9 +1,12 @@
+const BASE_URL = import.meta.env.BASE_URL;
+const DATA_PATH = `${BASE_URL}data/projections/`;
+
 export const PROJECTIONS = {
   mercator: {
     name: "Mercator",
-    world: "/data/projections/world_mercator.geojson",
-    outline: "/data/projections/outline_mercator.geojson",
-    graticule: "/data/projections/graticule_mercator.geojson",
+    world: `${DATA_PATH}world_mercator.geojson`,
+    outline: `${DATA_PATH}outline_mercator.geojson`,
+    graticule: `${DATA_PATH}graticule_mercator.geojson`,
     year: "1569",
 
     creators: [
@@ -33,9 +36,9 @@ export const PROJECTIONS = {
 
   robinson: {
     name: "Robinson",
-    world: "/data/projections/world_robinson.geojson",
-    outline: "/data/projections/outline_robinson.geojson",
-    graticule: "/data/projections/graticule_robinson.geojson",
+    world: `${DATA_PATH}world_robinson.geojson`,
+    outline: `${DATA_PATH}outline_robinson.geojson`,
+    graticule: `${DATA_PATH}graticule_robinson.geojson`,
     year: "1963",
     creators: [
       {
@@ -62,9 +65,9 @@ export const PROJECTIONS = {
 
   dymaxion: {
     name: "Dymaxion / Fuller",
-    world: "/data/projections/world_dymaxion.geojson",
-    outline: "/data/projections/outline_dymaxion.geojson",
-    graticule: "/data/projections/graticule_dymaxion.geojson",
+    world: `${DATA_PATH}world_dymaxion.geojson`,
+    outline: `${DATA_PATH}outline_dymaxion.geojson`,
+    graticule: `${DATA_PATH}graticule_dymaxion.geojson`,
     year: "1943",
     creators: [
       {
@@ -92,9 +95,9 @@ export const PROJECTIONS = {
 
   gall_peters: {
     name: "Gall–Peters",
-    world: "/data/projections/world_gall_peters.geojson",
-    outline: "/data/projections/outline_gall_peters.geojson",
-    graticule: "/data/projections/graticule_gall_peters.geojson",
+    world: `${DATA_PATH}world_gall_peters.geojson`,
+    outline: `${DATA_PATH}outline_gall_peters.geojson`,
+    graticule: `${DATA_PATH}graticule_gall_peters.geojson`,
     year: "1855 and 1973",
 
     creators: [
@@ -126,9 +129,9 @@ export const PROJECTIONS = {
 
   goode_homolosine: {
     name: "Goode Homolosine",
-    world: "/data/projections/world_goode_homolosine.geojson",
-    outline: "/data/projections/outline_goode_homolosine.geojson",
-    graticule: "/data/projections/graticule_goode_homolosine.geojson",
+    world: `${DATA_PATH}world_goode_homolosine.geojson`,
+    outline: `${DATA_PATH}outline_goode_homolosine.geojson`,
+    graticule: `${DATA_PATH}graticule_goode_homolosine.geojson`,
     year: "1923",
     creators: [
       {
@@ -155,9 +158,9 @@ export const PROJECTIONS = {
 
   authagraph: {
     name: "AuthaGraph",
-    world: "/data/projections/world_narukawa2022_authagraph.geojson",
-    outline: "/data/projections/outline_narukawa2022_authagraph.geojson",
-    graticule: "/data/projections/graticule_narukawa2022_authagraph.geojson",
+    world: `${DATA_PATH}world_narukawa2022_authagraph.geojson`,
+    outline: `${DATA_PATH}outline_narukawa2022_authagraph.geojson`,
+    graticule: `${DATA_PATH}graticule_narukawa2022_authagraph.geojson`,
     year: "1999",
     creators: [
       {
@@ -185,9 +188,9 @@ export const PROJECTIONS = {
 
   winkel_tripel: {
     name: "Winkel Tripel",
-    world: "/data/projections/world_winkel_tripel.geojson",
-    outline: "/data/projections/outline_winkel_tripel.geojson",
-    graticule: "/data/projections/graticule_winkel_tripel.geojson",
+    world: `${DATA_PATH}world_winkel_tripel.geojson`,
+    outline: `${DATA_PATH}outline_winkel_tripel.geojson`,
+    graticule: `${DATA_PATH}graticule_winkel_tripel.geojson`,
     year: "1921",
     creators: [
       {

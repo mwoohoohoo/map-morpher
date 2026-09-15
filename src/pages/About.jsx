@@ -11,7 +11,7 @@ export default function About() {
         <div className="relative left-1/2 -translate-x-1/2 flex flex-col flex-1 min-h-0 w-screen px-layout-s md:px-layout-m lg:px-layout-l">
           <div className="w-full max-w-[1400px] flex-1 border border-l-outlines border-r-outlines border-y-0 mx-auto grid grid-cols-1 lg:grid-cols-[minmax(560px,1fr)_minmax(0,1fr)] min-h-0 gap-px bg-outlines">
             {/* Top-left */}
-            <div className="flex flex-col items-start px-4 lg:px-6 py-4 lg:py-6 gap-3 lg:gap-6 bg-bg">
+            <div className="flex flex-col items-start px-4 lg:px-6 py-4 lg:py-6 gap-3 lg:gap-6 bg-bg order-2 lg:order-1">
               <h1>About this tool</h1>
               <p className="body-large">
                 I am a bit of a map nerd. I'm fascinated by how geo-spatial data
@@ -48,7 +48,7 @@ export default function About() {
             </div>
 
             {/* Top-right */}
-            <div className="bg-bg flex items-center justify-center px-4 py-4 md:px-10 md:py-10">
+            <div className="bg-bg flex items-center justify-center px-4 py-4 md:px-10 md:py-10 order-1 lg:order-2">
               <ProjectionIllustration />
             </div>
           </div>

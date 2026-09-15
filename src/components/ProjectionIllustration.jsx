@@ -2,20 +2,22 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { animate, useMotionValue, useMotionValueEvent } from "motion/react";
 import { interpolate as flubberInterpolate } from "flubber";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const VIEWBOX = "0 0 335 335";
 
 const ASSETS = {
   cylinder: {
-    grid: "/assets/illustration/cylinder.svg",
-    complete: "/assets/illustration/cylinder-circle.svg",
+    grid: `${BASE_URL}assets/illustration/cylinder.svg`,
+    complete: `${BASE_URL}assets/illustration/cylinder-circle.svg`,
   },
   cone: {
-    grid: "/assets/illustration/cone.svg",
-    complete: "/assets/illustration/cone-circle.svg",
+    grid: `${BASE_URL}assets/illustration/cone.svg`,
+    complete: `${BASE_URL}assets/illustration/cone-circle.svg`,
   },
   disk: {
-    grid: "/assets/illustration/disk.svg",
-    complete: "/assets/illustration/disk-circle.svg",
+    grid: `${BASE_URL}assets/illustration/disk.svg`,
+    complete: `${BASE_URL}assets/illustration/disk-circle.svg`,
   },
 };
 

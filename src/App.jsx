@@ -7,7 +7,7 @@ import { Toaster } from "sonner";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/map-morpher">
       <Toaster
         position="top-center"
         toastOptions={{

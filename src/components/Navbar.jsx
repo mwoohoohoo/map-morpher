@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 export default function Navbar() {
   return (
@@ -8,7 +9,7 @@ export default function Navbar() {
           <div className="max-w-[1400px] h-10 md:h-14 flex items-center justify-between mx-auto">
             {/* Logo */}
             <Link to="/">
-              <h2>Map morpher</h2>
+              <img src={logo} alt="Map morpher" className="h-5 md:h-7 w-auto" />
             </Link>
 
             {/* Nav links */}

@@ -2,10 +2,12 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, useMotionValue, useTransform, animate } from "motion/react";
 import { interpolate } from "flubber";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const LOGO_FILES = [
-  "/assets/loading/load-1.svg",
-  "/assets/loading/load-2.svg",
-  "/assets/loading/load-3.svg",
+  `${BASE_URL}assets/loading/load-1.svg`,
+  `${BASE_URL}assets/loading/load-2.svg`,
+  `${BASE_URL}assets/loading/load-3.svg`,
 ];
 
 const MORPH_DURATION = 0.15;
