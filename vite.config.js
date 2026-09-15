@@ -5,8 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 
 export default defineConfig({
-  base: "/responsive-dashboard/",
   plugins: [tailwindcss(), react()],
+  base: "/map-morpher/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
