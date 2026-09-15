@@ -1,0 +1,9 @@
+.body-large {
+  font-size: clamp(1rem, 1.05rem + 0.25vw, 1.125rem);
+  line-height: 140%;
+}
+
+.body-small {
+  font-size: clamp(0.875rem, 0.84rem + 0.15vw, 1rem);
+  line-height: 140%;
+}
