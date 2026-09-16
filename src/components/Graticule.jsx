@@ -50,6 +50,7 @@ export default function Graticule({
   height = 120,
   stroke = DEFAULT_STROKE,
   progress,
+  projectionName,
 }) {
   const canvasRef = useRef(null);
 
@@ -402,7 +403,8 @@ export default function Graticule({
       style={{
         aspectRatio: `${width} / ${height}`,
       }}
-      aria-hidden="true"
+      role="img"
+      aria-label={`Graticule showing the ${projectionName} projection`}
     />
   );
 }

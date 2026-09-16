@@ -253,6 +253,7 @@ export default function Home() {
                 width={GRATICULE_WIDTH}
                 height={GRATICULE_HEIGHT}
                 progress={projectionProgress}
+                projectionName={projectionContent.name}
               />
             </div>
 
@@ -278,6 +279,7 @@ export default function Home() {
                     width={WIDTH}
                     height={HEIGHT}
                     progress={projectionProgress}
+                    projectionName={projectionContent.name}
                   />
                 </div>
 
@@ -314,6 +316,7 @@ export default function Home() {
                           width={WIDTH}
                           height={HEIGHT}
                           progress={projectionProgress}
+                          projectionName={projectionContent.name}
                         />
                       </div>
 
@@ -327,6 +330,7 @@ export default function Home() {
                           width={GRATICULE_WIDTH}
                           height={GRATICULE_HEIGHT}
                           progress={projectionProgress}
+                          projectionName={projectionContent.name}
                         />
                       </div>
                     </motion.div>

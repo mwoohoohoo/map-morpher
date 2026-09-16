@@ -49,6 +49,7 @@ export default function WorldMap({
   width = 800,
   height = 400,
   progress,
+  projectionName,
 }) {
   const canvasRef = useRef(null);
 
@@ -371,7 +372,8 @@ export default function WorldMap({
       style={{
         aspectRatio: `${width} / ${height}`,
       }}
-      aria-hidden="true"
+      role="img"
+      aria-label={`World map using the ${projectionName} projection`}
     />
   );
 }
