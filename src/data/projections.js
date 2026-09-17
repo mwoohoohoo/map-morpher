@@ -17,21 +17,57 @@ export const PROJECTIONS = {
       },
     ],
 
-    type: "a cylindrical",
-    typeDescription:
-      "A cylindrical projection represents the Earth as if its surface were projected onto a cylinder.",
+    type: {
+      article: "a",
+      text: "cylindrical",
+      annotations: [
+        {
+          term: "cylindrical",
+          description:
+            "A cylindrical projection represents the Earth as if its surface were projected onto a cylinder.",
+        },
+      ],
+    },
 
     features: [
-      "allows accurate straight-line navigation",
-      "preserves angles and shapes at local scale (conformal)",
-      "widely used and recognised",
+      {
+        text: "allows accurate straight-line navigation",
+      },
+      {
+        text: "preserves angles and shapes at a local scale (conformal)",
+        annotations: [
+          {
+            term: "conformal",
+            description:
+              "Conformal maps preserve angles, but may distort lengths or distances.",
+          },
+        ],
+      },
+      {
+        text: "widely used and recognised (especially for mapping applications)",
+      },
     ],
 
     cons: [
-      "extreme area distortion far from the equator",
-      "reinforces a Eurocentric perspective",
-      "mathematically impossible to map the poles",
+      {
+        text: "extreme area distortion far from the equator",
+      },
+      {
+        text: "reinforces a Eurocentric perspective",
+      },
+      {
+        text: "mathematically impossible to map the poles",
+        annotations: [
+          {
+            term: "mathematically impossible",
+            description:
+              "The linear scaling along the meridians (resulting from the cylindrical projection) becomes infinitely large at the poles.",
+          },
+        ],
+      },
     ],
+
+    cons: ["", "", ""],
   },
 
   robinson: {
@@ -48,18 +84,34 @@ export const PROJECTIONS = {
       },
     ],
 
-    type: "a pseudo-cylindrical",
-    typeDescription:
-      "A pseudo-cylindrical projection uses straight, parallel lines of latitude while its meridians are not all straight and parallel.",
+    type: {
+      article: "a",
+      text: "pseudo-cylindrical",
+      annotations: [
+        {
+          term: "pseudo-cylindrical",
+          description:
+            "A pseudo-cylindrical projection uses straight, parallel lines of latitude while its meridians are not all straight and parallel.",
+        },
+      ],
+    },
 
     features: [
-      "offers a compromise between various distortions",
-      "designed to be visually appealing",
+      {
+        text: "offers a compromise between various distortions",
+      },
+      {
+        text: "designed to be visually appealing",
+      },
     ],
 
     cons: [
-      "moderately distorts areas, shapes, distances, directions and angles",
-      "distortion increases away from the centre of the map",
+      {
+        text: "moderately distorts areas, shapes, distances, directions and angles",
+      },
+      {
+        text: "distortion increases away from the centre of the map",
+      },
     ],
   },
 
@@ -77,19 +129,37 @@ export const PROJECTIONS = {
       },
     ],
 
-    type: "an icosahedral",
-    typeDescription:
-      "An icosahedral projection projects the Earth onto the faces of an icosahedron, a three-dimensional shape with 20 triangular faces.",
+    type: {
+      article: "an",
+      text: "icosahedral",
+      annotations: [
+        {
+          term: "icosahedral",
+          description:
+            "An icosahedral projection projects the Earth onto the faces of an icosahedron, a three-dimensional shape with 20 triangular faces.",
+        },
+      ],
+    },
 
     features: [
-      "lack of an obvious north-south/east-west orientation can reduce cultural bias",
-      "low distortion of areas, shapes, distances, directions and angles",
-      "scale is accurate along facet edges",
+      {
+        text: "lack of an obvious orientation can reduce cultural bias",
+      },
+      {
+        text: "low distortion of areas, shapes, distances, directions and angles",
+      },
+      {
+        text: "scale is accurate along facet edges",
+      },
     ],
 
     cons: [
-      "distortion increases away from the facet edges",
-      "flattened shape is unfamiliar",
+      {
+        text: "distortion increases away from the facet edges",
+      },
+      {
+        text: "flattened shape is unfamiliar",
+      },
     ],
   },
 
@@ -113,17 +183,36 @@ export const PROJECTIONS = {
       },
     ],
 
-    type: "a cylindrical equal-area",
-    typeDescription:
-      "A cylindrical equal-area projection preserves the relative areas of regions while distorting their shapes.",
+    type: {
+      article: "a",
+      text: "cylindrical equal-area",
+      annotations: [
+        {
+          term: "cylindrical",
+          description:
+            "A cylindrical projection represents the Earth as if its surface were projected onto a cylinder.",
+        },
+        {
+          term: "equal-area",
+          description:
+            "An equal-area projection preserves the relative areas of regions while distorting their shapes.",
+        },
+      ],
+    },
 
     features: [
-      "reduces distortion of relative areas in comparison with the Mercator projection",
-      "challenges Eurocentric perspectives and cultural biases",
+      {
+        text: "reduces distortion of relative areas in comparison with the Mercator projection",
+      },
+      {
+        text: "challenges Eurocentric perspectives and cultural biases",
+      },
     ],
 
     cons: [
-      "high distortion of shapes, especially around the equator and poles",
+      {
+        text: "high distortion of shapes, especially around the equator and poles",
+      },
     ],
   },
 
@@ -141,18 +230,51 @@ export const PROJECTIONS = {
       },
     ],
 
-    type: "an equal-area pseudo-cylindrical",
-    typeDescription:
-      "An equal-area pseudo-cylindrical projection preserves relative areas while using curved or interrupted meridians to reduce distortion.",
+    type: {
+      article: "an",
+      text: "equal-area pseudo-cylindrical",
+      annotations: [
+        {
+          term: "equal-area",
+          description:
+            "An equal-area projection preserves the relative areas of regions while distorting their shapes.",
+        },
+        {
+          term: "pseudo-cylindrical",
+          description:
+            "A pseudo-cylindrical projection uses straight, parallel lines of latitude and a straight central meridian. However, unlike in a cylindrical projection, all other meridians are longer and bow outwards from the central meridian.",
+        },
+      ],
+    },
 
     features: [
-      "combines strengths of sinusoidal and Mollweide projections, while mitigating their weaknesses",
-      "maintains relative areas of land masses",
+      {
+        text: "combines strengths of sinusoidal and Mollweide projections, while mitigating their weaknesses",
+        annotations: [
+          {
+            term: "sinusoidal",
+            description:
+              "The sinusoidal projection was the first pseudo-cylindrical projection. It is equal-area, with the poles represented as points. The equator and central meridian are undistorted.",
+          },
+          {
+            term: "Mollweide",
+            description:
+              "The Mollweide projection is an equal-area pseudo-cylindrical projection in the shape of an ellipse. Shapes at the ellipse's perimeter are less distorted than they are in the sinusoidal projection.",
+          },
+        ],
+      },
+      {
+        text: "maintains relative areas of land masses",
+      },
     ],
 
     cons: [
-      "shapes, angles and distances are distorted",
-      "its interrupted form sacrifices accuracy over oceans",
+      {
+        text: "shapes, angles and distances are distorted",
+      },
+      {
+        text: "its interrupted form sacrifices accuracy over the oceans",
+      },
     ],
   },
 
@@ -170,19 +292,37 @@ export const PROJECTIONS = {
       },
     ],
 
-    type: "an (almost) equal-area",
-    typeDescription:
-      "An equal-area projection preserves the relative areas of regions, although their shapes may be distorted. This projection conceptually fits into that category.",
+    type: {
+      article: "an",
+      text: "(almost) equal-area",
+      annotations: [
+        {
+          term: "(almost) equal-area",
+          description:
+            "An equal-area projection preserves the relative areas of regions, although their shapes may be distorted. This projection conceptually fits into that category, although it is not strictly an equal-area projection.",
+        },
+      ],
+    },
 
     features: [
-      "reduces distortion of areas and shapes",
-      "can be tiled in any direction",
-      "shows the world from a less Eurocentric perspective",
+      {
+        text: "reduces distortion of areas and shapes",
+      },
+      {
+        text: "can be tiled in any direction",
+      },
+      {
+        text: "shows the world from a less Eurocentric perspective",
+      },
     ],
 
     cons: [
-      "directions and distances are distorted",
-      "orientation is unfamiliar",
+      {
+        text: "directions and distances are distorted",
+      },
+      {
+        text: "orientation is unfamiliar",
+      },
     ],
   },
 
@@ -200,17 +340,31 @@ export const PROJECTIONS = {
       },
     ],
 
-    type: "modified azimuthal",
-    typeDescription:
-      "A modified azimuthal projection combines characteristics of azimuthal projections with other methods to reduce overall distortion. In an azimuthal projection, a point (azimuth) on the globe becomes the centre of a circular projection, where distances and directions from the azimuth are preserved.",
+    type: {
+      article: "a",
+      text: "modified azimuthal",
+      annotations: [
+        {
+          term: "modified azimuthal",
+          description:
+            "A modified azimuthal projection combines characteristics of azimuthal projections with other methods to reduce overall distortion. In an azimuthal projection, a point (azimuth) on the globe becomes the centre of a circular projection, where distances and directions from the azimuth are preserved.",
+        },
+      ],
+    },
 
     features: [
-      "low average distortion of areas, direction and distance",
-      "replaced the Robinson projection as National Geographic's projection of choice",
+      {
+        text: "low average distortion of areas, directions and distances",
+      },
+      {
+        text: "replaced the Robinson projection as National Geographic's projection of choice",
+      },
     ],
 
     cons: [
-      "moderately distorts shapes, especially towards poles and map edges",
+      {
+        text: "moderately distorts shapes, especially towards the poles and map edges",
+      },
     ],
   },
 };

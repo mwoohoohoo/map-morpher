@@ -15,14 +15,14 @@ export default function About() {
               <h1>About this tool</h1>
               <p className="body-large">
                 I am a bit of a map nerd. I'm fascinated by how geo-spatial data
-                bridges the gap between the physical and digital worlds and I'm
-                excited by how much I still have to learn about this field.
+                bridges the gap between the physical and digital worlds and am
+                humbled by how much I still have to learn about this field.
               </p>
               <p className="pt-1">
-                Prior to my map nerd days, I was only really aware of one map
-                projection: the Mercator, a version of which is often used for
-                mapping applications. But there are so many others out there,
-                with all sorts of quirky shapes and interesting histories.
+                I used to only really be aware of one map projection: the
+                Mercator, a version of which is often used for mapping
+                applications. But there are so many others out there, with all
+                sorts of quirky shapes and interesting histories.
               </p>
               <p>
                 This tool showcases a selection of more- and less-well-known

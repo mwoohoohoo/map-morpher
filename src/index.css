@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;500&family=Varta:wght@300..700&display=swap");
 @import "tailwindcss";
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/inter";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
   --text: #664e4c;
   --text-h: #664e4c;
   --bg: #e8d9bd;
-  --border: #857170;
+  --border: oklch(0.922 0 0);
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
+  --accent: oklch(0.97 0 0);
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -30,6 +35,36 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 body {
@@ -99,4 +134,29 @@ h4 {
 
 p {
   margin: 0;
+}
+
+/* ------------------------------------------------------------
+   Definition interaction mode
+
+   Desktop / hover-capable devices use the Tooltip.
+   Touch devices use the Popover.
+------------------------------------------------------------ */
+
+.definition-desktop {
+  display: inline;
+}
+
+.definition-touch {
+  display: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .definition-desktop {
+    display: none;
+  }
+
+  .definition-touch {
+    display: inline;
+  }
 }
