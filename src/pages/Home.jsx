@@ -60,9 +60,8 @@ export default function Home() {
 
   const projectionProgress = useMotionValue(1);
 
-  // Prevent the first render from triggering
-  // a projection transition.
-  const hasMounted = useRef(false);
+  // Remember which projection was previously displayed.
+  const previousProjection = useRef(INITIAL_PROJECTION);
 
   // ------------------------------------------------------------
   // Load initial projection and begin background preloading.
@@ -141,18 +140,11 @@ export default function Home() {
   // ------------------------------------------------------------
 
   useEffect(() => {
-    if (!projectionPaths) {
+    if (selectedProjection === previousProjection.current) {
       return;
     }
 
-    // Initial render:
-    // the canvases already contain the selected projection.
-    if (!hasMounted.current) {
-      hasMounted.current = true;
-      projectionProgress.set(1);
-
-      return;
-    }
+    previousProjection.current = selectedProjection;
 
     projectionProgress.set(0);
 
@@ -164,7 +156,7 @@ export default function Home() {
     return () => {
       controls.stop();
     };
-  }, [selectedProjection, projectionPaths, projectionProgress]);
+  }, [selectedProjection, projectionProgress]);
 
   // ------------------------------------------------------------
   // Projection change handler.
