@@ -66,8 +66,6 @@ export const PROJECTIONS = {
         ],
       },
     ],
-
-    cons: ["", "", ""],
   },
 
   robinson: {
