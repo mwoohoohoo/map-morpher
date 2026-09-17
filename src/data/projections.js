@@ -367,4 +367,50 @@ export const PROJECTIONS = {
       },
     ],
   },
+
+  equal_earth: {
+    name: "Equal Earth",
+    world: `${DATA_PATH}world_equal_earth.geojson`,
+    outline: `${DATA_PATH}outline_equal_earth.geojson`,
+    graticule: `${DATA_PATH}graticule_equal_earth.geojson`,
+    year: "2018",
+    creators: [
+      {
+        name: "Bernhard Jenny, Bojan Šavrič and Tom Patterson",
+        profession: "cartographers",
+      },
+    ],
+
+    type: {
+      article: "an",
+      text: "equal-area pseudo-cylindrical",
+      annotations: [
+        {
+          term: "equal-area",
+          description:
+            "An equal-area projection preserves the relative areas of regions while distorting their shapes.",
+        },
+        {
+          term: "pseudo-cylindrical",
+          description:
+            "A pseudo-cylindrical projection uses straight, parallel lines of latitude and a straight central meridian. However, unlike in a cylindrical projection, all other meridians are longer and bow outwards from the central meridian.",
+        },
+      ],
+    },
+
+    features: [
+      {
+        text: "visually similar to the Robinson projection, except that it accurately represents areas of land masses",
+      },
+      {
+        text: "popularised by the 'Correct the Map' campaign and was consequently voted in by the UN in 2026 as a recommended alternative to the Mercator projection",
+      },
+    ],
+
+    cons: [
+      {
+        text: "distorts shapes, directions, angles and distances",
+      },
+    ],
+  },
 };

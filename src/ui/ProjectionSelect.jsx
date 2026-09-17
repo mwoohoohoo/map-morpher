@@ -40,6 +40,13 @@ export default function ProjectionSelect({
             </Select.Item>
 
             <Select.Item
+              value="equal_earth"
+              className="flex items-center h-8 py-1 px-3 cursor-pointer rounded-sm outline-none data-[highlighted]:bg-surface-active data-[highlighted]:text-text-dark"
+            >
+              <Select.ItemText>Equal Earth</Select.ItemText>
+            </Select.Item>
+
+            <Select.Item
               value="gall_peters"
               className="flex items-center h-8 py-1 px-3 cursor-pointer rounded-sm outline-none data-[highlighted]:bg-surface-active data-[highlighted]:text-text-dark"
             >

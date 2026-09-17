@@ -60,6 +60,14 @@ const PROJECTIONS = {
     minLat: -90,
     maxLat: 90,
   },
+
+  equal_earth: {
+    proj: "+proj=eqearth",
+    output: "graticule_equal_earth.geojson",
+    minLat: -90,
+    maxLat: 90,
+    densify: true,
+  },
 };
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
